@@ -74,6 +74,101 @@
     <span><i class="dot"></i>Ships Tuesdays &amp; Fridays</span>
   </div>
 </div>
+<section id="products">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Six formulas, one shared soil</h2>
+      <p>Filter by what your skin is asking for this week. Every jar is labeled with the farm it came from.</p>
+    </div>
+    <div class="filters" id="filterBar">
+      <button class="filter-btn active" data-filter="all">Everything</button>
+      <button class="filter-btn" data-filter="clarify">Clarifying</button>
+      <button class="filter-btn" data-filter="glow">Glow</button>
+      <button class="filter-btn" data-filter="calm">Calming</button>
+      <button class="filter-btn" data-filter="nourish">Nourishing</button>
+    </div>
+    <div class="product-grid" id="productGrid">
+      <!-- populated by JS -->
+    </div>
+  </div>
+</section>
 
+<section id="ritual">
+  <div class="wrap">
+    <div class="ritual">
+      <div class="ritual-grid">
+        <div>
+          <h2>What is your skin asking for today?</h2>
+          <p class="ritual-copy">Three quick questions and we'll point you to the one formula worth starting with — no quiz-funnel upsell, just a straight answer.</p>
+          <div class="step-track" id="stepTrack">
+            <span><i></i></span><span><i></i></span><span><i></i></span>
+          </div>
+        </div>
+        <div class="quiz-card" id="quizCard"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stories">
+  <div class="wrap">
+    <div class="section-head" style="justify-content:center;text-align:center;">
+      <div style="margin:0 auto;">
+        <h2>From people who've run out and reordered</h2>
+      </div>
+    </div>
+    <div class="testimonial-wrap">
+      <div class="testimonial-track">
+        <div class="testimonial-slides" id="tSlides">
+          <div class="t-slide">
+            <p class="quote">The clarifying mist is the first toner that hasn't made my skin feel tight. I keep it on my desk, not just the bathroom.</p>
+            <p class="who">Priya N. — using Eucalyptus Mist since 2023</p>
+          </div>
+          <div class="t-slide">
+            <p class="quote">My dermatologist actually asked what I was using. It was the oat cream. I didn't tell her it cost less than my old moisturizer.</p>
+            <p class="who">Marcus T. — Ivory Oat Cream</p>
+          </div>
+          <div class="t-slide">
+            <p class="quote">I'm sensitive to almost everything scented. The calm balm is the only thing my face hasn't rebelled against in a decade.</p>
+            <p class="who">Sana K. — Sage Calm Balm</p>
+          </div>
+          <div class="t-slide">
+            <p class="quote">The renewal mask smells like being handed a cup of tea in someone's kitchen. That's not a metaphor I use lightly.</p>
+            <p class="who">Owen R. — Pistachio Renewal Mask</p>
+          </div>
+        </div>
+      </div>
+      <div class="t-controls">
+        <button class="t-arrow" id="tPrev" aria-label="Previous story">←</button>
+        <div class="t-dots" id="tDots"></div>
+        <button class="t-arrow" id="tNext" aria-label="Next story">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head" style="justify-content:center;text-align:center;">
+      <div style="margin:0 auto;">
+        <h2>Questions before you order</h2>
+      </div>
+    </div>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="newsletter">
+      <h2>Get the next harvest report before we sell out of it</h2>
+      <form class="newsletter-form" id="newsletterForm" novalidate>
+        <input type="email" id="newsletterEmail" placeholder="you@example.com" required>
+        <button type="submit">Notify me</button>
+        <span class="form-msg" id="formMsg"></span>
+      </form>
+    </div>
+  </div>
+</section>
 </body>
 </html>
